@@ -12,17 +12,32 @@ body {
 
 .container {
   max-width: 1440px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .wrapper {
-  height: 570px;
-  margin: 5% 0;
+  height: auto;
+  margin: 20% 0;
   display: grid;
   /* grid-rows: repeat(4, 1fr);*/
   grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+  "supervisor supervisor supervisor supervisor supervisor supervisor"
+
+  "team team team team team team"
+
+  "karma karma karma karma karma karma"
+
+  "calculator calculator calculator calculator calculator calculator";
   grid-gap: 20px;
+
+}
+
+.card__right img:after {
+  display: inline-block;
+  content: "";
+  clear: both;
 }
 
 h2 {
@@ -32,4 +47,6 @@ h2 {
 
 p {
   color: $content-color;
+  font-size: .83rem;
+  line-height: 1.5rem;
 }
