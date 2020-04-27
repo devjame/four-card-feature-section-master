@@ -195,6 +195,10 @@ footer a:hover {
     width: 85%;
   }
 
+  header {
+    margin: 0 23%;
+  }
+
   .wrapper {
     grid-template-columns: repeat(6, 15%);
     grid-template-areas: "supervisor . team . karma calculator";
